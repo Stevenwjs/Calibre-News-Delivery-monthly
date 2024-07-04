@@ -1,1 +1,13 @@
+#!/usr/bin/env python
+# vim:fileencoding=utf-8
+from calibre.web.feeds.news import BasicNewsRecipe
 
+class AdvancedUserRecipe1720061577(BasicNewsRecipe):
+    title          = 'MIT Sloan management review'
+    oldest_article = 7
+    max_articles_per_feed = 100
+    auto_cleanup   = True
+
+    feeds          = [
+        ('MIT Sloan management review', 'http://feeds.feedburner.com/mitsmr'),
+    ]
