@@ -3,11 +3,15 @@
 from calibre.web.feeds.news import BasicNewsRecipe
 
 class AdvancedUserRecipe1720061577(BasicNewsRecipe):
-    title          = 'MIT Sloan management review'
-    oldest_article = 7
+    title          = 'News feeds'
+    oldest_article = 30
     max_articles_per_feed = 100
     auto_cleanup   = True
 
     feeds          = [
         ('MIT Sloan management review', 'http://feeds.feedburner.com/mitsmr'),
+        ('Newsweek', 'https://www.newsweek.com/rss'),
+        ('Aeon', 'https://aeon.co/feed.rss'),
+        ('CSM', 'https://rss.csmonitor.com/feeds/all'),
+        ('中国作家网', 'http://rsshub.app/chinawriter/404015/404018'),
     ]
